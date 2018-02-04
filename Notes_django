@@ -1,0 +1,61 @@
+Django Quick Ref
+-----------------
+
+cd to location of virtual environment with django
+"activate <name of virtual env>"
+cd to location of project scripts
+to deactivate, "deactivate"
+then do "python manage.py shell" or other commands
+exit() to return to cmd
+
+- models = tables
+- urls = store patterns for url naming
+- create admin user
+
+
+
+- The model, which provides the interface with the  database containing the application data;
+- The view, which decides what information to present to the user and collects information from the user; and
+- The controller, which manages the business logic for the application and acts as an information broker between the model and the view.
+
+- Change your models (in models.py).
+- Run python manage.py makemigrations to create migrations for those changes
+- Run python manage.py migrate to apply those changes to the database.
+-  python manage.py sqlmigrate polls 0001
+		why is it 0001??? maybe corresponds with migration number?
+
+- python manage.py shell   --> calls interactive console
+- python manage.py runserver
+
+
+- models  is main file that stores configuration.
+- other important: 
+	- mysite/settings: add to list of installed apps
+	- polls/apps.py - add name polls
+	
+create admin
+-------------
+
+1. python manage.py createsuperuser
+user = 'admin', history password
+		
+		
+		
+
+
+
+Each view is responsible for doing one of two things: returning an HttpResponse object containing the content for the requested page, or raising an exception such as Http404. The rest is up to you.
+
+
+
+
+
+
+
+<C:\Users\Pizzagirl\PycharmProjects\Django1\venv\Scripts\activate.bat>
+
+
+
+
+
+
